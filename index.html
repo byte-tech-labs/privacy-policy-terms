@@ -263,7 +263,7 @@
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg>
-          <div><strong>No ads, no tracking</strong><span>No advertising, no analytics, no tracking SDKs and no device identifiers.</span></div>
+          <div><strong>No ads, no tracking</strong><span>No advertising, no tracking across apps and no advertising identifiers. Usage statistics are anonymous and you can turn them off.</span></div>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 8.5a4 4 0 0 1-.5 9.5Z"/></svg>
@@ -326,6 +326,7 @@
           <dl>
             <div><dt>Recovery email</dt><dd>If you add a recovery email, SafeBox sends that address and a one-time six-digit code to our email service, which emails the code to you. This happens only when you confirm the address or reset a forgotten passcode. Your passcode and vault content are never included. The email is sent from our Gmail account, so Google processes it and a copy of the sent message remains in that mailbox. To prevent abuse, the service keeps a counter tied to a one-way hash of your address for one hour, and stores nothing else.</dd></div>
             <div><dt>Purchases</dt><dd>SafeBox Plus is bought through Apple. To check whether you have SafeBox Plus, SafeBox uses RevenueCat with a random, anonymous ID created by the app. RevenueCat receives your purchase and receipt details from Apple, along with basic technical information such as app version, device model and country. We never link this ID to your name, email or any other identifier.</dd></div>
+            <div><dt>Usage statistics (you can turn this off)</dt><dd>To learn which parts of SafeBox are used and where people get stuck, the app sends anonymous usage events to Google Analytics for Firebase: which screen was opened, which button was tapped, and whether an action such as an import or a purchase finished. Events contain only fixed words and counts, for example “3 photos imported”. They never contain your files, names, notes, card details, searches, email address or passcode. Google receives them with a random installation ID created by the app, and basic technical information such as app version, device model, system version, language and country. We don’t set a user ID, we don’t collect the advertising identifier, and the data isn’t used for advertising. Turn it off at any time in Settings › About › Share usage data.</dd></div>
             <div><dt>iCloud Sync and backup (optional)</dt><dd>If you turn on iCloud Sync, your content is encrypted on your device and stored in the private iCloud database of your own Apple Account. Only that encrypted data leaves your device. We cannot access it, and Apple cannot read the sealed content. Encrypted backup files go only where you choose to save them.</dd></div>
             <div><dt>Feedback</dt><dd>If you send feedback from Settings › Send Feedback, your mail app sends us the message, your email address and the app version shown in the subject. We use it only to reply and improve SafeBox.</dd></div>
           </dl>
@@ -348,10 +349,11 @@
           <h2 class="sec">What we don’t do</h2>
           <ul>
             <li>We don’t show ads, and never will.</li>
-            <li>We don’t use analytics, crash-reporting or advertising SDKs, and we don’t track you across apps or websites.</li>
-            <li>We don’t collect the advertising identifier or other device identifiers.</li>
+            <li>We don’t use advertising or crash-reporting SDKs, and we don’t track you across apps or websites.</li>
+            <li>We don’t put your content, names, searches or anything that identifies you in usage statistics.</li>
+            <li>We don’t collect the advertising identifier or the device’s vendor identifier.</li>
             <li>We don’t sell, rent or share your information for marketing.</li>
-            <li>We don’t run servers that store your content or keep logs of what you do in the app.</li>
+            <li>We don’t run servers that store your content.</li>
           </ul>
           <p>If you choose to share crash reports or analytics with app developers in your device settings, Apple may give us anonymous crash reports. These don’t contain your vault content.</p>
         </section>
@@ -362,7 +364,7 @@
           <ul>
             <li><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a>: the App Store, payments, iCloud, and Face ID or Touch ID.</li>
             <li><a href="https://www.revenuecat.com/privacy/" rel="noopener">RevenueCat</a>: anonymous confirmation of SafeBox Plus purchases.</li>
-            <li><a href="https://policies.google.com/privacy" rel="noopener">Google</a>: Gmail and Google Apps Script, used only to send recovery codes.</li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener">Google</a>: Gmail and Google Apps Script, used only to send recovery codes, and Google Analytics for Firebase for anonymous usage statistics.</li>
           </ul>
           <p>Links in SafeBox, such as to this page, open websites we don’t control. Their own privacy policies apply.</p>
         </section>
@@ -380,7 +382,7 @@
 
         <section id="security">
           <h2 class="sec">Security</h2>
-          <p>SafeBox seals your content with modern encryption, using keys derived from your passcode and protected by your device. Information sent to our email service, RevenueCat and iCloud travels over encrypted connections.</p>
+          <p>SafeBox seals your content with modern encryption, using keys derived from your passcode and protected by your device. Information sent to our email service, RevenueCat, Google Analytics and iCloud travels over encrypted connections.</p>
           <p>When you open, preview or export a file, SafeBox may create a short-lived temporary copy so the system can show it. These copies are deleted when you close the file, lock SafeBox or open it again. If you updated from an earlier version, files from that version are encrypted in the background after your first unlock.</p>
           <p>No method of storage or transmission is completely secure, but we design SafeBox so that your content is never in our hands.</p>
         </section>
